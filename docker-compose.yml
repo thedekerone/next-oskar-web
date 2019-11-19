@@ -1,0 +1,11 @@
+version: "3"
+services:
+  gaa:
+    build: .
+    ports:
+      - "8080:8080"
+      - "3000:3000"
+    volumes:
+      - /components/:/usr/components/
+
+    image: "gaa"

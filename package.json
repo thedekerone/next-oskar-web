@@ -1,0 +1,25 @@
+{
+	"name": "oskar-gaa",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "next build",
+		"dev": "next",
+		"start": "next start"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"standard": "^14.3.1"
+	},
+	"dependencies": {
+		"isomorphic-fetch": "^2.2.1",
+		"next": "^9.1.4",
+		"next-routes": "1.4.2",
+		"react": "^16.11.0",
+		"react-dom": "^16.11.0",
+		"styled-components": "^4.4.1"
+	}
+}
