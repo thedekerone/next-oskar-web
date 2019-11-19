@@ -7,7 +7,7 @@ export const NavbarContainer = styled.div`
 	z-index: 100;
 	right: 0;
 	background: ${(props) => props.background || 'transparent'};
-	& ul li {
+	& ul a {
 		color: ${(props) => props.color || '#f2f2f2'};
 	}
 	box-shadow: 0px 0px 5px -2px rgba(0, 0, 0, 0.4);
@@ -43,7 +43,7 @@ export const List = styled.ul`
 		display: flex;
 	}
 `;
-export const ListItem = styled.li`
+export const ListItem = styled.a`
 	font-size: 0.9rem;
 	cursor: pointer;
 	text-align: center;
@@ -53,9 +53,10 @@ export const ListItem = styled.li`
 		color: #fb4d3d;
 	}
 `;
-export const Title = styled.h1`
+export const Title = styled.a`
 	font-size: 1.5rem;
 	position: relative;
+	font-weight: bold;
 	color: #fb4d3d;
 	&:after {
 		content: '';

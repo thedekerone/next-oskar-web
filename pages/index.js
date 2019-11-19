@@ -4,7 +4,18 @@ import { Products } from '../components/Products';
 import { About } from '../components/About';
 import { Contact } from '../components/Contact';
 import { Layout } from '../components/Layout';
-export default function index() {
+import { useWeglot } from '../hooks/useWeglot';
+function Index() {
+	const [
+		initial
+	] = useWeglot();
+	console.log(initial);
+	initial !== null &&
+		!initial.initialized &&
+		initial.initialize({
+			api_key : 'wg_91e50a16f59b2922c685b30df90da5677'
+		});
+
 	return (
 		<Layout>
 			<Hero />
@@ -14,3 +25,4 @@ export default function index() {
 		</Layout>
 	);
 }
+export default Index;

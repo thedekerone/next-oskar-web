@@ -6,6 +6,7 @@ services:
       - "8080:8080"
       - "3000:3000"
     volumes:
-      - /components/:/usr/components/
+      - ./components:/usr/components
+      - ./pages:/usr/pages
 
     image: "gaa"

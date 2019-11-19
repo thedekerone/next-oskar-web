@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Navbar } from '../components/Navbar';
 import { RecipeCard } from '../components/RecipeCard';
 import { Loading } from '../components/Loading';
-import { GlobalStyles } from '../GlobalStyles';
 import { Layout } from '../components/Layout';
+import { Link } from '../routes';
 import styled from 'styled-components';
 import 'isomorphic-fetch';
 
@@ -41,13 +41,24 @@ function Dishes(props) {
 		setLoading
 	] = useState(true);
 
-	console.log(props);
+	useEffect(() => {
+		fetch(
+			'https://api.spoonacular.com/recipes/search?query=mango&number=45&apiKey=46f7725b67fe4b93b3964903b125b12d&offset=1'
+		)
+			.then((res) => res.json())
+			.then((data) => {
+				setBase(data.baseUri);
+				setRecipes(data.results);
+				setLoading(false);
+			});
+	}, []);
+
 	return (
 		<div>
 			<Layout background='white' color='#2c2c2c'>
 				<Container>
-					{props.data.map((e) => {
-						return <RecipeCard key={e.id} title={e.title} imageUrl={props.base + e.image} />;
+					{recipes.map((e) => {
+						return <RecipeCard key={e.id} title={e.title} imageUrl={base + e.image} />;
 					})}
 				</Container>
 			</Layout>
@@ -55,12 +66,12 @@ function Dishes(props) {
 	);
 }
 
-Dishes.getInitialProps = async ({ req }) => {
-	const res = await fetch(
-		'https://api.spoonacular.com/recipes/search?query=mango&number=45&apiKey=46f7725b67fe4b93b3964903b125b12d&offset=1'
-	);
-	const json = await res.json();
-	return { data: json.results, base: json.baseUri };
-};
+// Dishes.getInitialProps = async ({ req }) => {
+// 	const res = await fetch(
+// 		'https://api.spoonacular.com/recipes/search?query=mango&number=45&apiKey=46f7725b67fe4b93b3964903b125b12d&offset=1'
+// 	);
+// 	const json = await res.json();
+// 	return { data: json.results, base: json.baseUri };
+// };
 
 export default Dishes;

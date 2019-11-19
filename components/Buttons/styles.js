@@ -4,7 +4,7 @@ const mainColor = '#FB4D3D';
 const secColor = '#FB4D3D';
 //
 
-export const FilledButton = styled.div`
+export const FilledButton = styled.a`
 	display: inline-block;
 	padding: 0.8rem 4rem;
 	color: #fff;
@@ -26,7 +26,7 @@ export const FilledButton = styled.div`
 		margin: 1rem;
 	}
 `;
-export const Contact = styled.button`
+export const Contact = styled.a`
 	display: inline-block;
 	padding: 0.8rem 4rem;
 	background: ${mainColor};
@@ -48,7 +48,7 @@ export const Contact = styled.button`
 	margin: 0%;
 	margin-top: 3rem;
 `;
-export const BorderButton = styled.div`
+export const BorderButton = styled.a`
 	display: inline-block;
 	padding: 0.8rem 4rem;
 	border: 1.5px solid ${secColor};
@@ -78,7 +78,7 @@ export const BorderButton = styled.div`
 		}
 	}
 `;
-export const ProductsButton = styled.div`
+export const ProductsButton = styled.a`
 	display: inline-block;
 	padding: 0.8rem 4rem;
 	border: 1.5px solid ${secColor};
