@@ -1,4 +1,4 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes } from 'styled-components'
 
 export const showIn = keyframes`
   0% {
@@ -10,7 +10,7 @@ export const showIn = keyframes`
     opacity: 1;
     transform: translateY(0)
   }
-`;
+`
 export const fadeIn = keyframes`
   0% {
     opacity: .5;
@@ -22,7 +22,7 @@ export const fadeIn = keyframes`
     filter:blur(0)
 
   }
-`;
+`
 export const scaleIn = keyframes`
     0% {
 		transform: scale(1);
@@ -33,4 +33,24 @@ export const scaleIn = keyframes`
 	100% {
 		opacity: 0;
 	}
-`;
+`
+export const slideIn = keyframes`
+  0%{
+    top: -20%;
+  }
+
+  100%{
+    top:0%;
+  }
+
+
+`
+export const slideOut = keyframes`
+  0%{
+    top:0%;
+  }
+
+  100%{
+    top:-20%;
+  }
+`

@@ -1,6 +1,7 @@
 
 import React, { useEffect, useState, useRef } from 'react'
 
+//this whole hook is just a way to use weglot app in react
 
 export function useWeglot(){
 
