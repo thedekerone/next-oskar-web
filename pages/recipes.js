@@ -56,11 +56,15 @@ function Dishes(props) {
 	return (
 		<div>
 			<Layout background='white' color='#2c2c2c'>
-				<Container>
-					{recipes.map((e) => {
-						return <RecipeCard key={e.id} title={e.title} imageUrl={base + e.image} />;
-					})}
-				</Container>
+				{loading ? (
+					<Loading />
+				) : (
+					<Container>
+						{recipes.map((e) => {
+							return <RecipeCard key={e.id} title={e.title} imageUrl={base + e.image} />;
+						})}
+					</Container>
+				)}
 			</Layout>
 		</div>
 	);
