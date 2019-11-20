@@ -69,13 +69,4 @@ function Dishes(props) {
 		</div>
 	);
 }
-
-// Dishes.getInitialProps = async ({ req }) => {
-// 	const res = await fetch(
-// 		'https://api.spoonacular.com/recipes/search?query=mango&number=45&apiKey=46f7725b67fe4b93b3964903b125b12d&offset=1'
-// 	);
-// 	const json = await res.json();
-// 	return { data: json.results, base: json.baseUri };
-// };
-
 export default Dishes;
