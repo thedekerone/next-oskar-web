@@ -51,7 +51,7 @@ export const Contact = styled.a`
 export const BorderButton = styled.a`
 	display: inline-block;
 	padding: 0.8rem 4rem;
-	border: 1.5px solid ${secColor};
+	border: 1px solid ${secColor};
 	cursor: pointer;
 	border-radius: 5px;
 	font-size: 1rem;
@@ -105,4 +105,15 @@ export const ProductsButton = styled.a`
 			color: #fff;
 		}
 	}
+`;
+
+export const About = styled(FilledButton)`
+	margin: 4rem 0 0 0 !important;
+	align-self: flex-end;
+	display:flex;
+	align-items: center;
+	justify-content: space-around;
+	color: white;
+	background: #09BC8A;
+
 `;

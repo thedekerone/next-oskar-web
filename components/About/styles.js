@@ -18,8 +18,8 @@ export const Container = styled.div`
 	height: 100%;
 	padding: 5rem 3rem;
 	margin: 0 auto;
-
-	align-items: center;
+	flex-direction: column;
+	display: flex;
 `;
 export const CardContainer = styled.div`
 	display: flex;

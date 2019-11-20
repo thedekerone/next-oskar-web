@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	width: 100%;
-	background: #f2eff9;
+	background: #fceff4;
 `;
 
 export const Title = styled.h1`
@@ -50,7 +50,7 @@ export const Input = styled.input`
 	width: 100%;
 	border-bottom: 1px solid #2c2c2c;
 	box-sizing: border-box;
-	background: #f2eff9;
+	background: transparent;
 `;
 export const Img = styled.img`
 	max-width: 37rem;

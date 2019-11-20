@@ -18,7 +18,7 @@ export const PlaceHolder = styled.article`
 	margin: 1rem 0;
 
 	align-items: center;
-	box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, .5);
+	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, .3);
 	border-radius: 5px;
 	@media (min-width: 700px) {
 		margin: 0;

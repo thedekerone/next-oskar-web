@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { showIn } from '../../static/animation';
 
-export const Background = styled.div`background: #f2eff9;`;
+export const Background = styled.div`background: #fceff4;`;
 export const Container = styled.div`
 	max-width: 1400px;
 	padding: 7.5rem 3rem;
@@ -61,5 +61,5 @@ export const ImgPlaceholder = styled.div`
 	overflow: hidden;
 
 	height: 18rem;
-	box-shadow: 0px 4px 10px -3px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 10px 16px -4px rgba(0, 0, 0, 0.4);
 `;

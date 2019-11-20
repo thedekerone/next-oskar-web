@@ -9,18 +9,20 @@ import {
 } from './styles'
 import { useShowOnScroll } from '../../hooks/useShowOnScroll'
 import { Link, Router } from '../../routes'
-import { slideIn } from '../../static/animation'
+
+
 
 export function Navbar({
   position,
   color = '#f2f2f2',
-  background = 'transparent'
+  background = 'transparent',
+  fixed=false
 }) {
   const [show] = useShowOnScroll(position)
 
   return (
     <>
-      <NavbarContainerFixed show={show}>
+    {!fixed&&<NavbarContainerFixed show={show}>
         <NavbarContent>
           <Link route='/'>
             <Title>Agricola Oskar</Title>
@@ -29,36 +31,37 @@ export function Navbar({
             <Link route='/'>
               <ListItem>Home</ListItem>
             </Link>
-            <Link route='/'>
-              <ListItem>Contact</ListItem>
+            <Link route='/#products'>
+              <ListItem>Products</ListItem>
             </Link>
-            <Link route='/'>
+            <Link route='/#about'>
               <ListItem>About</ListItem>
             </Link>
-            <Link route='/'>
-              <ListItem>Products</ListItem>
+            <Link route='/#contact'>
+              <ListItem>Contact</ListItem>
             </Link>
           </List>
         </NavbarContent>
-      </NavbarContainerFixed>
+      </NavbarContainerFixed>}
+      
 
-      <NavbarContainer background={background} color={color}>
+      <NavbarContainer background={background} fixed={fixed} color={color}>
         <NavbarContent>
-          <Link route='/'>
+        <Link route='/'>
             <Title>Agricola Oskar</Title>
           </Link>
           <List>
             <Link route='/'>
               <ListItem>Home</ListItem>
             </Link>
-            <Link route='/'>
-              <ListItem>Contact</ListItem>
+            <Link route='/#products'>
+              <ListItem>Products</ListItem>
             </Link>
-            <Link route='/'>
+            <Link route='/#about'>
               <ListItem>About</ListItem>
             </Link>
-            <Link route='/'>
-              <ListItem>Products</ListItem>
+            <Link route='/#contact'>
+              <ListItem>Contact</ListItem>
             </Link>
           </List>
         </NavbarContent>

@@ -4,7 +4,7 @@ import { ContactButton } from '../Buttons';
 
 export function Contact() {
 	return (
-		<Container>
+		<Container id='contact'>
 			<FormContainer>
 				<Form>
 					<Title>Get in contact</Title>

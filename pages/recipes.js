@@ -55,7 +55,7 @@ function Dishes(props) {
 
 	return (
 		<div>
-			<Layout background='white' color='#2c2c2c'>
+			<Layout fixed={true} background='white' color='#2c2c2c'>
 				{loading ? (
 					<Loading />
 				) : (

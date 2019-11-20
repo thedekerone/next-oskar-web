@@ -24,7 +24,7 @@ export function Products() {
 	] = useNearScreen();
 
 	return (
-		<Background>
+		<Background id='products'>
 			<Container id='container'>
 				<Title>Handpicked Mangoes</Title>
 				<SubTitle>Always in season</SubTitle>
