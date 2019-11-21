@@ -1,5 +1,10 @@
 import styled from 'styled-components'
+import { Container, CenterContainer } from '../SharedStyles'
 
-export const Container = styled.div`
-  background: #f2f3f4;
+export const LocationContainer = styled(Container)`
+  position: relative;
+`
+export const LocationCenterContainer = styled(CenterContainer)`
+  position: relative;
+  height: 80vh;
 `

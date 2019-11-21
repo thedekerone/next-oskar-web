@@ -5,7 +5,7 @@ import { About } from '../components/About'
 import { Contact } from '../components/Contact'
 import { Layout } from '../components/Layout'
 import { useWeglot } from '../hooks/useWeglot'
-import { Location } from '../components/Location'
+import Location from '../components/Location'
 function Index() {
   const [initial] = useWeglot()
   initial !== null &&
