@@ -5,6 +5,9 @@ import { MainButton, SecondaryButton } from '../Buttons';
 export function Hero() {
 	return (
 		<HeroContainer>
+			<ImgContainer>
+				<Img src='/static/images/mango-kent.jpg' alt='hero image' />
+			</ImgContainer>
 			<Container>
 				<MainText>We bring you the fresher mangoes of the region</MainText>
 				<SecondatyText>
@@ -16,9 +19,6 @@ export function Hero() {
 					<SecondaryButton>See products</SecondaryButton>
 				</div>
 			</Container>
-			<ImgContainer>
-				<Img src='/static/images/mango-kent.jpg' alt='hero image' />
-			</ImgContainer>
 		</HeroContainer>
 	);
 }

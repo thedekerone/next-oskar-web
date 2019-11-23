@@ -108,11 +108,11 @@ export const ProductsButton = styled.a`
 `;
 
 export const About = styled(FilledButton)`
-	margin: 4rem 0 0 0 !important;
+	margin: 3rem 0 0 0 !important;
 	align-self: flex-end;
 	display:flex;
 	align-items: center;
-	justify-content: space-around;
+	justify-content: center;
 	color: white;
 	background: #09BC8A;
 

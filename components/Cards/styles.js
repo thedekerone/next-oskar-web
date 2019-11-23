@@ -20,7 +20,7 @@ export const PlaceHolder = styled.article`
 	align-items: center;
 	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, .3);
 	border-radius: 5px;
-	@media (min-width: 700px) {
+	@media (min-width: 900px) {
 		margin: 0;
 
 		width: ${(props) => props.sizeW || '100%'};
