@@ -4,13 +4,13 @@ import { showIn } from '../../static/animation';
 export const Container = styled.div`height: ${(props) => props.size || '10rem'};`;
 
 export const PlaceHolder = styled.article`
-	min-height: ${(props) => props.size || '30rem'};
 	background: #fff;
 	box-sizing: border-box;
 	width: 100%;
 	position: relative;
 	opacity: 0;
 
+	min-height: ${(props) => props.size || '30rem'};
 	&.trigger {
 		animation: ${showIn} 0.7s ease;
 		opacity: 1;

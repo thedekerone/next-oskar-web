@@ -5,13 +5,11 @@ import { Link, Router } from '../../routes';
 
 export function RecipeCard({ imageUrl, title }) {
 	return (
-		<Link route='/recipe'>
-			<Cards size='17rem'>
-				<ImgContainer>
-					<Img src={imageUrl} alt='recipe image' />
-				</ImgContainer>
-				<Title>{title}</Title>
-			</Cards>
-		</Link>
+		<Cards size='17rem'>
+			<ImgContainer>
+				<Img src={imageUrl} alt='recipe image' />
+			</ImgContainer>
+			<Title>{title}</Title>
+		</Cards>
 	);
 }
