@@ -12,14 +12,11 @@ export const HeroContainer = styled.div`
 	}
 `;
 
-export const ImgContainer = styled.div`
+export const ImgContainer = styled.picture`
 	top: 0;
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-image: url(require('/static/images/mango-kent-mini.jpg?webp'));
-	background-repeat: no-repeat;
-	background-size: cover;
 	z-index: -2;
 `;
 export const Img = styled.img`
@@ -31,6 +28,13 @@ export const Img = styled.img`
 	@media (min-width: 900px) {
 		height: auto;
 	}
+`;
+export const Source = styled.source`
+	z-index: -1;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+	animation: ${fadeIn} 1.2s ease;
 `;
 
 export const Container = styled.div`
