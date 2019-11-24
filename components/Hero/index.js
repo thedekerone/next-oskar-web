@@ -16,7 +16,7 @@ export function Hero() {
 				</SecondatyText>
 				<div>
 					<MainButton>Contact us</MainButton>
-					<SecondaryButton>See products</SecondaryButton>
+					<SecondaryButton>See gallery</SecondaryButton>
 				</div>
 			</Container>
 		</HeroContainer>
