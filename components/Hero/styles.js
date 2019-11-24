@@ -17,7 +17,7 @@ export const ImgContainer = styled.div`
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	background-image: url('/static/images/mango-kent-mini.jpg');
+	background-image: url(require('/static/images/mango-kent-mini.jpg?webp'));
 	background-repeat: no-repeat;
 	background-size: cover;
 	z-index: -2;

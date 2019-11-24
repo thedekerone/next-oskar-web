@@ -6,7 +6,7 @@ export function Hero() {
 	return (
 		<HeroContainer>
 			<ImgContainer>
-				<Img src='/static/images/mango-kent.jpg' alt='hero image' />
+				<Img src={require('../../static/images/mango-kent.jpg?webp')} alt='hero image' />
 			</ImgContainer>
 			<Container>
 				<MainText>We bring you the fresher mangoes of the region</MainText>
