@@ -19,6 +19,14 @@ export const FlexContainer = styled.div`
 	display: flex;
 	justify-content: space-between;
 	flex-direction: column-reverse;
+
+	/* 100% width for the map and description components*/
+	/* map api can't be customized using styled components */
+
+	& div {
+		width: 100%;
+	}
+
 	@media (min-width: 900px) {
 		align-items: center;
 		flex-direction: row;
@@ -27,7 +35,6 @@ export const FlexContainer = styled.div`
 export const Description = styled.div`
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	margin-bottom: 5rem;
 
 	@media (min-width: 900px) {

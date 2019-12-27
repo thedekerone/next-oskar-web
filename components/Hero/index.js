@@ -15,8 +15,8 @@ export function Hero() {
 					them
 				</SecondatyText>
 				<div>
-					<MainButton>Contact us</MainButton>
-					<SecondaryButton>See gallery</SecondaryButton>
+					<MainButton href='#contact'>Contact us</MainButton>
+					<SecondaryButton href='#products'>See products</SecondaryButton>
 				</div>
 			</Container>
 		</HeroContainer>

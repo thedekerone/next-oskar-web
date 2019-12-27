@@ -10,6 +10,7 @@ import {
 	Text
 } from './styles';
 import { MainButton, AboutButton } from '../Buttons';
+import MapGoogle from '../MapGoogle';
 
 export class Location extends React.Component {
 	render() {
@@ -18,29 +19,8 @@ export class Location extends React.Component {
 				<LocationCenterContainer>
 					<Title>Location</Title>
 					<FlexContainer>
-						<Map
-							google={this.props.google}
-							style={{
-								width     : '100%',
-								height    : '400px',
-								position  : 'relative',
-								boxSizing : 'border-box'
-							}}
-							initialCenter={{
-								lat : -9.509646,
-								lng : -77.995859
-							}}
-							zoom={15}
-							className={'maps'}
-							onClick={this.onMapClicked}>
-							<Marker onClick={this.onMarkerClick} name={'Current location'} />
+						<MapGoogle />
 
-							<InfoWindow onClose={this.onInfoWindowClose}>
-								<div>
-									<h1>Yautan</h1>
-								</div>
-							</InfoWindow>
-						</Map>
 						<Description>
 							<DescriptionTitle>Yautan</DescriptionTitle>
 
@@ -60,6 +40,3 @@ export class Location extends React.Component {
 		);
 	}
 }
-export default GoogleApiWrapper({
-	apiKey : 'AIzaSyAn9p-JMbMC-QUIKA6k1A3hTsYz7GjJO6w'
-})(Location);

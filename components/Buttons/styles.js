@@ -26,7 +26,7 @@ export const FilledButton = styled.a`
 		margin: 1rem;
 	}
 `;
-export const Contact = styled.a`
+export const Contact = styled.div`
 	display: inline-block;
 	padding: 0.8rem 4rem;
 	background: ${mainColor};
@@ -114,6 +114,7 @@ export const About = styled(FilledButton)`
 	align-items: center;
 	justify-content: center;
 	color: white;
-	background: #09BC8A;
+	background: grey
+	/* background: #09BC8A; */
 
 `;
