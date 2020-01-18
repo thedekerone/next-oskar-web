@@ -13,6 +13,7 @@
 	"license": "ISC",
 	"devDependencies": {
 		"babel-plugin-styled-components": "1.10.6",
+		"next-optimized-images": "^2.5.4",
 		"standard": "14.3.1"
 	},
 	"dependencies": {
